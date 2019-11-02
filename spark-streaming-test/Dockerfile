@@ -1,6 +1,7 @@
-FROM openjdk:8-jre-alpine
+#FROM openjdk:8-jre-alpine
+FROM goyalzz/ubuntu-java-8-maven-docker-image
 RUN apt install git
-RUN apt install maven
+#RUN apt install maven
 RUN mkdir -p /opt/spark
 WORKDIR /opt/spark
 RUN git clone https://github.com/kiennguyen294/spark.git
